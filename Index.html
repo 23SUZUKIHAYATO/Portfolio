@@ -4,18 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鈴木颯人のポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+
 </head>
 <body>
+    <nav class="fixed-nav">
+        <ul>
+            <li class="menu-item"><a href="#about">Home</a></li>
+            <li class="menu-item"><a href="#projects">Projects</a></li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header>
-        <h1>鈴木颯人のポートフォリオ</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#projects">プロジェクト</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <h1 class="title">鈴木颯人_ポートフォリオ</h1>
     </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2 class="section-title">自己紹介</h2>
+            <div class="section-content">
+                <div class="slider" aria-label="プロフィール写真スライダー">
+                    <div class="slides">
+                        <div class="slide"><img src="Img/Portfolio_face1.png" alt="鈴木颯人の写真1"></div>
+                        <!-- <div class="slide"><img src="Img/Portfolio_face2.png" alt="鈴木颯人の写真2"></div> -->
+                        <div class="slide"><img src="Img/Portfolio_face3.png" alt="鈴木颯人の写真3"></div>
+                        <div class="slide"><img src="Img/Portfolio_face4.png" alt="鈴木颯人の写真4"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-card">
+                        <table class="about-table" aria-label="自己紹介表">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">学校名</th>
+                                    <td>横浜デジタルアーツ専門学校</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">学科</th>
+                                    <td>ゲーム科</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">学年</th>
+                                    <td>2年</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">趣味</th>
+                                    <td>散歩、映画鑑賞、カラオケ、ゲーム、古着屋さん巡り</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">好きなゲーム</th>
+                                    <td>モンスターハンターシリーズ、APEX LEGENDS、ELDEN RING NIGHTREIGN、REPO、Devil May Cryシリーズ、Shadowverse、Slay the Spire、GUILTY GEAR -STRIVE-、Illusion Carnival、Ultimate Chicken Hose、FGO、雀魂、ファンタジーライフシリーズ、Minecraft</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="tech-skills" class="section">
+            <h2 class="section-title">技術スキル</h2>
+            <div class="about-card">
+                <table class="about-table" aria-label="技術スキル表">
+                    <tbody>
+                        <tr>
+                            <th scope="row">開発言語</th>
+                            <td>Go、PHP、C#、C++、C、JavaScript/jQuery/Bootstrap、HTML/CSS</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">プログラム開発環境</th>
+                            <td>Microsoft Visual Studio、Visual Studio Code、Unity、Unreal Engine 5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OS</th>
+                            <td>Linux、Windows</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ツール</th>
+                            <td>GitHub、Sourcetree、Photoshop</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">業務効率化ソフト</th>
+                            <td>Slack、Discode</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">取得資格</th>
+                            <td>CGクリエイター検定 ベーシック、情報活用試験三級</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">プロジェクト</h2>
+            <div class="projects-grid">
+                <article class="card" role="button" tabindex="0" aria-haspopup="dialog">
+                    <div class="card-thumb"><img src="Img/BlockAvoid_tit.png" alt="Block Avoid サムネイル"></div>
+                    <h3 class="card-title">Block Avoid</h3>
+                    <p class="card-text">左右スワイプで障害物を避けるシンプルなゲーム</p>
+                    <div class="modal-body-content" hidden>
+                        <div class="modal-media-row">
+                            <div class="modal-media-col image">
+                                <img src="Img/BlockAvoid_tit.png" alt="Block Avoid スクリーンショット1" loading="lazy">
+                            </div>
+                            <div class="modal-media-col details">
+                                <ul class="modal-details">
+                                    <li>開発環境: Unity</li>
+                                    <li>担当: 障害物、アイテムの取得、効果の処理、SE、BGM</li>
+                                    <li>二年生の前期のチーム制作です。SE・BGMはファサードで簡単に呼び出せるようにしました。落下物のスポーン管理、Time.deltaTimeによるフレーム非依存の移動、画面外での自動破棄、取得イベント連動のスコア加算までをひとつのゲームループで統合。難易度やステージ進行はGameManagerの状態に連動し、疎結合で拡張しやすい設計です。</li>
+                                    <li>UnityRoom: <a href="https://unityroom.com/games/blockavoid" target="_blank" rel="noopener">https://unityroom.com/games/blockavoid</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/tvItS5V6FBk"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+                <article class="card" role="button" tabindex="0" aria-haspopup="dialog">
+                    <div class="card-thumb"><img src="Img/Portfolio_face1.png" alt="作品タイトル2 サムネイル"></div>
+                    <h3 class="card-title">作品タイトル2</h3>
+                    <p class="card-text">簡単な説明</p>
+                    <div class="modal-body-content" hidden>
+                        <div class="app-gallery">
+                            <img src="Img/Portfolio_face1.png" alt="作品タイトル2 イメージ" loading="lazy">
+                        </div>
+                        <p>作品タイトル2の詳細説明です。設計方針や工夫点、パフォーマンス改善など。</p>
+                        <ul>
+                            <li>開発環境:</li>
+                            <li>担当:</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card" role="button" tabindex="0" aria-haspopup="dialog">
+                    <div class="card-thumb"><img src="Img/Portfolio_face4.png" alt="作品タイトル3 サムネイル"></div>
+                    <h3 class="card-title">作品タイトル3</h3>
+                    <p class="card-text">簡単な説明</p>
+                    <div class="modal-body-content" hidden>
+                        <div class="app-gallery">
+                            <img src="Img/Portfolio_face4.png" alt="作品タイトル3 イメージ" loading="lazy">
+                        </div>
+                        <p>作品タイトル3の詳細説明です。チーム体制や役割分担、学びなど。</p>
+                        <ul>
+                            <li>開発環境:</li>
+                            <li>担当:</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="about-card" aria-label="お問い合わせ">
+                <p>contact</p>
+                <ul>
+                    <li>Email: r06.gm.2140061@da.iwasaki.ac.jp</li>
+                    <li>GitHub: <a href= "https://github.com/23SUZUKIHAYATO" >https://github.com/23SUZUKIHAYATO</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>© 2026 Hayato Suzuki</small>
+    </footer>
+
+    <!-- モーダルコンテナ -->
+    <div class="app-modal" id="project-modal" aria-hidden="true" aria-modal="true" role="dialog">
+        <div class="app-backdrop" data-modal-close="true"></div>
+        <div class="app-dialog" role="document">
+            <button class="app-close" aria-label="閉じる" data-modal-close="true"></button>
+            <h3 class="app-title"></h3>
+            <div class="app-content"></div>
+        </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
