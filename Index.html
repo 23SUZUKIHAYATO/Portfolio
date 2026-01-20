@@ -12,13 +12,13 @@
 <body>
     <nav class="fixed-nav">
         <ul>
-            <li class="menu-item"><a href="#about">Home</a></li>
-            <li class="menu-item"><a href="#projects">Projects</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
+            <li class="menu-item"><a href="#about">自己紹介</a></li>
+            <li class="menu-item"><a href="#projects">プロジェクト</a></li>
+            <li class="menu-item"><a href="#contact">お問い合わせ</a></li>
         </ul>
     </nav>
     <header>
-        <h1 class="title">鈴木颯人_ポートフォリオ</h1>
+        <h1 class="title">鈴木 颯人｜ポートフォリオ</h1>
     </header>
 
     <main>
@@ -34,31 +34,44 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <div class="about-card">
-                        <table class="about-table" aria-label="自己紹介表">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">学校名</th>
-                                    <td>横浜デジタルアーツ専門学校</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">学科</th>
-                                    <td>ゲーム科</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">学年</th>
-                                    <td>2年</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">趣味</th>
-                                    <td>散歩、映画鑑賞、カラオケ、ゲーム、古着屋さん巡り</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">好きなゲーム</th>
-                                    <td>モンスターハンターシリーズ、APEX LEGENDS、ELDEN RING NIGHTREIGN、REPO、Devil May Cryシリーズ、Shadowverse、Slay the Spire、GUILTY GEAR -STRIVE-、Illusion Carnival、Ultimate Chicken Hose、FGO、雀魂、ファンタジーライフシリーズ、Minecraft</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="about-stack">
+                        <div class="about-card profile-card" aria-label="プロフィール">
+                            <h3 class="about-subtitle">プロフィール</h3>
+                            <p class="profile-lead">横浜デジタルアーツ専門学校でゲームプログラミングを学んでいます。Unity（C#）での開発に加えて、サーバー／バックエンド領域にも強い関心があり、授業ではGo・PHPを学習しています。個人制作ではGoを使った実装や、PUN2・MagicOnionなどのネットワーク要素にも触れ、通信やデータの扱いまで含めてゲーム体験を支える開発に取り組んでいます。サークルでのGoチーム制作では、DB設計とAPIの設計書（エンドポイントや入出力の整理）も作成済みです。</p>
+                            <ul class="profile-points" aria-label="自己PR">
+                                <li>バックエンド志向: Go・PHPの学習に加え、チーム制作でDB設計／API設計書を作成し、仕様から組み立てる力を強化</li>
+                                <li>ネットワーク経験: PUN2・MagicOnionなどを用いた通信要素に触れ、クライアント/サーバーの役割を意識して実装</li>
+                                <li>安定性と保守性: ルール化・共通化（設定の外出し等）で、変更に強い作りを心がける</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-card" aria-label="基本情報">
+                            <h3 class="about-subtitle">基本情報</h3>
+                            <table class="about-table" aria-label="自己紹介表">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">学校名</th>
+                                        <td>横浜デジタルアーツ専門学校</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">学科</th>
+                                        <td>ゲーム科</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">学年</th>
+                                        <td>2年</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">趣味</th>
+                                        <td>散歩、映画鑑賞、カラオケ、ゲーム、古着屋さん巡り</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">好きなゲーム</th>
+                                        <td>モンスターハンターシリーズ、APEX LEGENDS、ELDEN RING NIGHTREIGN、REPO、Devil May Cryシリーズ、Shadowverse、Slay the Spire、GUILTY GEAR -STRIVE-、Illusion Carnival、Ultimate Chicken Horse、FGO、雀魂、ファンタジーライフシリーズ、Minecraft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,11 +98,11 @@
                         </tr>
                         <tr>
                             <th scope="row">ツール</th>
-                            <td>GitHub、Sourcetree、Photoshop</td>
+                            <td>GitHub、SourceTree、Photoshop</td>
                         </tr>
                         <tr>
                             <th scope="row">業務効率化ソフト</th>
-                            <td>Slack、Discode</td>
+                            <td>Slack、Discord</td>
                         </tr>
                         <tr>
                             <th scope="row">取得資格</th>
@@ -115,6 +128,8 @@
                             <div class="modal-media-col details">
                                 <ul class="modal-details">
                                     <li>開発環境: Unity</li>
+                                    <li>制作期間: 4か月</li>
+                                    <li>人数: 3人</li>
                                     <li>担当: 障害物、アイテムの取得、効果の処理、SE、BGM</li>
                                     <li>二年生の前期のチーム制作です。SE・BGMはファサードで簡単に呼び出せるようにしました。落下物のスポーン管理、Time.deltaTimeによるフレーム非依存の移動、画面外での自動破棄、取得イベント連動のスコア加算までをひとつのゲームループで統合。難易度やステージ進行はGameManagerの状態に連動し、疎結合で拡張しやすい設計です。</li>
                                     <li>UnityRoom: <a href="https://unityroom.com/games/blockavoid" target="_blank" rel="noopener">https://unityroom.com/games/blockavoid</a></li>
@@ -132,32 +147,173 @@
                     </div>
                 </article>
                 <article class="card" role="button" tabindex="0" aria-haspopup="dialog">
-                    <div class="card-thumb"><img src="Img/Portfolio_face1.png" alt="作品タイトル2 サムネイル"></div>
-                    <h3 class="card-title">作品タイトル2</h3>
-                    <p class="card-text">簡単な説明</p>
+                    <div class="card-thumb"><img src="Img/PACMUSCLE_title.png" alt="作品タイトル2 サムネイル"></div>
+                    <h3 class="card-title">PACMUSCLE</h3>
+                    <p class="card-text">Unityエディタ拡張：CSVベースのタイルマップ制作ツール</p>
                     <div class="modal-body-content" hidden>
-                        <div class="app-gallery">
-                            <img src="Img/Portfolio_face1.png" alt="作品タイトル2 イメージ" loading="lazy">
+                        <div class="modal-media-row">
+                            <div class="modal-media-col image">
+                                <img src="Img/PACMUSCLE_title.png" alt="PACMUSCLE スクリーンショット" loading="lazy">
+                            </div>
+                            <div class="modal-media-col details">
+                                <ul class="modal-details">
+                                    <li>概要: CSVでタイルID（整数）を管理し、Unity上で「編集→保存/読込→プレハブ自動配置」までを一気通貫で行う軽量マップ制作ツール</li>
+                                    <li>開発環境: Unity（C# / Editor拡張）, Visual Studio / VS Code</li>
+                                    <li>制作期間: 3日間</li>
+                                    <li>人数: 6人</li>
+                                    <li>担当: エディタUI（EditorWindow/2Dグリッド）, CSV入出力, プレハブ自動生成/再生成</li>
+                                    <li>PAC 説明動画: <a href="https://youtu.be/HRUxui_WSPI" target="_blank" rel="noopener">https://youtu.be/HRUxui_WSPI</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>作品タイトル2の詳細説明です。設計方針や工夫点、パフォーマンス改善など。</p>
+
+                        <h4>主な機能</h4>
                         <ul>
-                            <li>開発環境:</li>
-                            <li>担当:</li>
+                            <li>サムネイルからタイル（プレハブ）を選択し、クリックで配置／右クリックで消去</li>
+                            <li>grid[x,y] をCSVとして保存・読み込み（テキスト管理しやすく差分が追いやすい）</li>
+                            <li>CSV内容からプレハブを自動生成し、親オブジェクト配下にまとめて配置</li>
                         </ul>
+
+                        <h4>工夫点</h4>
+                        <ul>
+                            <li>タイルID⇔プレハブ対応をScriptableObject（CSVMapPrefabSetting）に外出しして、コード変更なしで差し替え・追加が可能</li>
+                            <li>再生成時は古い生成物を削除し、二重生成やゴミ残りを防止</li>
+                            <li>Orthographic Cameraの表示範囲からcellSizeを算出し、マップ全体が画面に収まるよう自動調整</li>
+                        </ul>
+
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/HRUxui_WSPI"
+                                    title="PAC 説明動画"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
                     </div>
                 </article>
                 <article class="card" role="button" tabindex="0" aria-haspopup="dialog">
-                    <div class="card-thumb"><img src="Img/Portfolio_face4.png" alt="作品タイトル3 サムネイル"></div>
-                    <h3 class="card-title">作品タイトル3</h3>
-                    <p class="card-text">簡単な説明</p>
+                    <div class="card-thumb"><img src="Img/Transwater_title.png" alt="Transwater サムネイル"></div>
+                    <h3 class="card-title">Transwater</h3>
+                    <p class="card-text">制作動画あり（YouTube）</p>
                     <div class="modal-body-content" hidden>
                         <div class="app-gallery">
-                            <img src="Img/Portfolio_face4.png" alt="作品タイトル3 イメージ" loading="lazy">
+                            <img src="Img/Transwater_title.png" alt="Transwater スクリーンショット" loading="lazy">
                         </div>
-                        <p>作品タイトル3の詳細説明です。チーム体制や役割分担、学びなど。</p>
+                        <p>1年次に「初めてちゃんと制作した」作品で、サークルの先輩方と共同で作成しました。担当はタイトル画面と画面遷移で、遷移時のアニメーション表現にこだわっています。</p>
                         <ul>
-                            <li>開発環境:</li>
-                            <li>担当:</li>
+                            <li>開発環境: Unity（C#）, DOTween</li>
+                            <li>制作期間: 3日間</li>
+                            <li>人数: 4人</li>
+                            <li>担当: タイトル画面、画面遷移（遷移アニメーションの実装）</li>
+                            <li>工夫点: DOTweenでUI/画面遷移のアニメーションを作り込み、テンポ良く気持ちよく切り替わるよう調整</li>
+                            <li>説明動画: <a href="https://youtu.be/419PphJ61oI" target="_blank" rel="noopener">https://youtu.be/419PphJ61oI</a></li>
+                        </ul>
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/419PphJ61oI"
+                                    title="Transwater 説明動画"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--inprogress" role="button" tabindex="0" aria-haspopup="dialog">
+                    <div class="card-thumb">
+                        <img src="Img/Portfolio_face1.png" alt="制作中プロジェクト① サムネイル" loading="lazy">
+                    </div>
+                    <h3 class="card-title">AI大喜利×陣取り（仮） <span class="status-badge" aria-label="制作中">制作中</span></h3>
+                    <p class="card-text">MagicOnion＋AI APIで作る、1対1の占有率バトル</p>
+                    <div class="modal-body-content" hidden>
+                        <div class="modal-media-row">
+                            <div class="modal-media-col image">
+                                <img src="Img/Portfolio_face1.png" alt="制作中プロジェクト① スクリーンショット" loading="lazy">
+                            </div>
+                            <div class="modal-media-col details">
+                                <ul class="modal-details">
+                                    <li>状態: 個人制作（制作中／内容は随時更新）</li>
+                                    <li>制作期間: 未記入</li>
+                                    <li>人数: 1人</li>
+                                    <li>技術: Unity（C#）, MagicOnion（gRPC）, 外部AI API</li>
+                                    <li>概要: 1対1でマスの占有率を競い、世界（盤面）の変化が見える陣取りバトル</li>
+                                    <li>マップ: 固定（例: 10×10）</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>ルール（企画）</h4>
+                        <ul>
+                            <li>中立マスでのみ「AIによる大喜利イベント」が発生</li>
+                            <li>別枠で「AIによるランダムイベント」が発生（桃鉄のような全体に影響するイベントを想定）</li>
+                            <li>中立マスの占有率が高いほど、AIが気まぐれにイベントを起こしやすいイメージ</li>
+                            <li>占有率の推移が盤面に反映され、プレイ中の変化が分かりやすい設計を目指す</li>
+                        </ul>
+
+                        <h4>現在の進捗</h4>
+                        <ul>
+                            <li>ゲームルール（占有率／中立マス／大喜利／ランダムイベント）の仕様整理</li>
+                            <li>サーバー側は基本機能を実装済み（通信・イベント処理の土台）</li>
+                            <li>Unity側のHTTP/2通信（MagicOnion）への移行で詰まり中</li>
+                        </ul>
+
+                        <h4>次にやること</h4>
+                        <ul>
+                            <li>Unityの通信方式を確定（MagicOnionのHTTP/2を通す／grpc-web等の代替案を検討）し、接続までを最小構成で通す</li>
+                            <li>疎通後に、盤面（10×10）・占有率表示の作り込み（見た目/分かりやすさ）</li>
+                            <li>AI大喜利の生成/評価フローと、ランダムイベント（全体影響）の種類追加</li>
+                        </ul>
+
+                        <h4>リンク</h4>
+                        <ul>
+                            <li>GitHub: 準備中</li>
+                            <li>デモ/動画: 準備中</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card card--inprogress" role="button" tabindex="0" aria-haspopup="dialog">
+                    <div class="card-thumb">
+                        <img src="Img/Portfolio_face3.png" alt="制作中プロジェクト② サムネイル" loading="lazy">
+                    </div>
+                    <h3 class="card-title">三国札（オンライン対戦・制作中） <span class="status-badge" aria-label="制作中">制作中</span></h3>
+                    <p class="card-text">Goサーバ＋DB＋WebSocketでリアルタイム対戦</p>
+                    <div class="modal-body-content" hidden>
+                        <div class="modal-media-row">
+                            <div class="modal-media-col image">
+                                <img src="Img/Portfolio_face3.png" alt="制作中プロジェクト② スクリーンショット" loading="lazy">
+                            </div>
+                            <div class="modal-media-col details">
+                                <ul class="modal-details">
+                                    <li>状態: 制作中（内容は随時更新）</li>
+                                    <li>制作期間: 未記入</li>
+                                    <li>人数: 未記入</li>
+                                    <li>技術: Go（サーバー）, DB, WebSocket（リアルタイム通信）</li>
+                                    <li>概要: 「三国札」というゲームをベースにしたオンライン対戦カードゲーム</li>
+                                    <li>目的: リアルタイム対戦の設計・実装（DB/WS/API設計）を通じてサーバー開発力を強化</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>現在の進捗</h4>
+                        <ul>
+                            <li>DBまわりの実装・準備</li>
+                            <li>DB設計書（Excel）を作成済み</li>
+                            <li>API設計書は作成途中</li>
+                        </ul>
+
+                        <h4>次にやること</h4>
+                        <ul>
+                            <li>API設計書を完成させ、エンドポイント/入出力/エラーを固める</li>
+                            <li>WebSocketのメッセージ設計（部屋・対戦状態・同期）を整理して実装</li>
+                            <li>対戦フロー（マッチング〜終了）と、不正対策/ログの追加</li>
+                        </ul>
+
+                        <h4>リンク</h4>
+                        <ul>
+                            <li>GitHub: 準備中</li>
+                            <li>デモ/動画: 準備中</li>
+                            <li>設計書:</li>
                         </ul>
                     </div>
                 </article>

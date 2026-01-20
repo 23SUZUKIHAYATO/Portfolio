@@ -134,6 +134,30 @@ body{
     margin: 0;
 }
 
+/* 自己紹介（右カラム） */
+.about-stack{
+    display: grid;
+    gap: 16px;
+}
+
+.profile-card .about-subtitle{ margin-bottom: 10px; }
+
+.profile-lead{
+    margin: 0 0 12px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.profile-points{
+    margin: 0;
+    padding-left: 18px;
+}
+
+.profile-points li{
+    line-height: 1.7;
+    color: #333;
+}
+
 /* 自己紹介分割レイアウト */
 .about-card{
     border: 1px solid #ddd;
@@ -248,6 +272,20 @@ body{
     margin: 0 0 8px;
 }
 
+/* 制作中バッジ */
+.status-badge{
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    border-radius: 999px;
+    background: #fff3cd;
+    color: #7a5a00;
+    border: 1px solid #ffe69c;
+    vertical-align: middle;
+}
+
 .card-text{
     margin: 0;
     color: #555;
@@ -344,6 +382,32 @@ body{
 .app-title{
     margin: 0 0 8px;
     font-size: 1.4rem;
+}
+
+/* モーダル本文のタイポグラフィ */
+.app-content p{
+    margin: 0 0 12px;
+}
+
+.app-content h4{
+    margin: 16px 0 8px;
+    font-size: 1.05rem;
+    border-left: 4px solid #555;
+    padding-left: 8px;
+}
+
+.app-content ul{
+    margin: 0 0 12px;
+    padding-left: 18px;
+}
+
+.app-content a{
+    color: #0b5ed7;
+    text-decoration: none;
+}
+
+.app-content a:hover{
+    text-decoration: underline;
 }
 
 .app-close{
