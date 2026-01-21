@@ -64,7 +64,7 @@ body{ padding-top: 56px; }
 .slider{
     width: 100%;
     max-width: 480px;
-    margin: 24px auto;
+    margin: 0;
     height: 480px;
     overflow: hidden;
     border-radius: 12px;
@@ -126,12 +126,24 @@ body{
 
 .section-content{
     display: grid;
-    grid-template-columns: 480px 1fr;
-    gap: 24px;
+    grid-template-columns: minmax(280px, 480px) 1fr;
+    grid-template-areas:
+        "photo profile"
+        "basic basic";
+    gap: 20px;
+    align-items: start;
 }
 
-.about-text p{
-    margin: 0;
+.about-photo{ grid-area: photo; }
+.about-text{ grid-area: profile; }
+.basic-card{ grid-area: basic; }
+
+.about-text p{ margin: 0; }
+
+/* 強調（作品説明/自己PRの読みやすさ向上） */
+.em{
+    font-weight: 700;
+    color: #0b5ed7;
 }
 
 /* 自己紹介（右カラム） */
@@ -227,6 +239,13 @@ body{
     background: #f7f7f7;
     font-weight: 600;
 }
+
+.table-scroll{ overflow-x: auto; }
+.about-table--wide{ min-width: 720px; }
+.about-table--wide th{
+    width: 12%;
+    white-space: nowrap;
+}
 .about-image{
     display: block;
     max-width: 100%;
@@ -258,6 +277,8 @@ body{
     background: #f2f2f2;
     border-radius: 6px;
     margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
 }
 .card-thumb img{
     display: block;
@@ -333,6 +354,10 @@ body{
 @media (max-width: 768px){
     .section-content{
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "photo"
+            "profile"
+            "basic";
     }
 
     .projects-grid{
@@ -446,6 +471,22 @@ body{
 .modal-media-row .modal-media-col.details{ flex: 1 1 50%; }
 .modal-details{ margin: 0; padding-left: 18px; }
 .modal-details li{ line-height: 1.6; }
+
+.media-figure{
+    margin: 0 0 10px;
+}
+.media-figure--sub{ opacity: 0.95; }
+.media-figure figcaption{
+    margin-top: 6px;
+    font-size: 0.92rem;
+    color: #444;
+}
+
+.modal-media-col.image img{
+    max-height: 260px;
+    object-fit: contain;
+    background: #111;
+}
 
 @media (max-width: 640px){
     .modal-media-row{ flex-direction: column; }
